@@ -1,0 +1,159 @@
+[
+  {
+    "id": "r_leni_marianne_schwestern_nahe",
+    "type": "Nähe/Bindung",
+    "figures": [
+      "leni",
+      "marianne"
+    ],
+    "phase": "Schule/Ausflug",
+    "prompt": "„Wie Schwestern“: Leni stützt Mariannes Liebesabenteuer, vermittelt, schützt – bis Geschichte und Ideologie die Nähe zerreiben.",
+    "focus": [
+      "Nähe",
+      "Körperlichkeit",
+      "Alltagsloyalität"
+    ],
+    "evidence": "Ausflug: Leni & Marianne teilen Stuhl, Arm um Hals/Schulter; später verweigert Marianne Hilfe. (vgl. S. 23–26, 29–30)"
+  },
+  {
+    "id": "r_marianne_otto_liebespaar_1912_1914",
+    "type": "Liebe/Verlobung",
+    "figures": [
+      "marianne",
+      "otto_fresenius"
+    ],
+    "phase": "Schule → Krieg 1914",
+    "prompt": "Liebespaar mit Zukunftsversprechen – das nicht an Beziehung scheitert, sondern am Krieg.",
+    "focus": [
+      "Schicksal",
+      "Treue",
+      "Gewaltgeschichte"
+    ],
+    "evidence": "Otto winkt, Verlobungsfest; Tod 1914 in den Argonnen. (vgl. S. 22–24)"
+  },
+  {
+    "id": "r_marianne_gustav_liebig_neue_verbindung_radikalisierung",
+    "type": "Ehe/Ideologie",
+    "figures": [
+      "marianne",
+      "gustav_liebig"
+    ],
+    "phase": "nach 1918 → NS-Zeit",
+    "prompt": "Marianne wählt nach Trauer eine neue Verbindung: Liebig. Die Beziehung kippt in Rangdenken und Parteimacht – mit Folgen für andere.",
+    "focus": [
+      "Anpassung",
+      "Macht",
+      "Mitläufertum/Überzeugung"
+    ],
+    "evidence": "Liebig wird SS-Sturmbannführer; verächtliche Worte, Anzeige/Behördenhinweis. (vgl. S. 24–26)"
+  },
+  {
+    "id": "r_liebig_vs_lenis_mann_verfolgung",
+    "type": "Verfolgung/Denunziation",
+    "figures": [
+      "gustav_liebig",
+      "leni"
+    ],
+    "phase": "NS-Zeit",
+    "prompt": "Über die Ehe mit Marianne wird Liebig indirekt zum Gegner Lenis: Er brandmarkt Lenis Mann als „nachlässigen Untertan“ und löst Repression aus.",
+    "focus": [
+      "Denunziation",
+      "Rangordnung",
+      "Staat als Waffe"
+    ],
+    "evidence": "Lenis Mann weigert sich SA/SS; Liebig macht Behörden aufmerksam. (vgl. S. 25–26)"
+  },
+  {
+    "id": "r_nora_fraeulein_sichel_gefälligkeit_kippt",
+    "type": "Schülerin–Lehrerin",
+    "figures": [
+      "nora",
+      "fraeulein_sichel"
+    ],
+    "phase": "Schule → NS-Zeit",
+    "prompt": "Noras früh eingeübte Gefälligkeit gegenüber Autorität wird später zur Funktionärinnen-Haltung: Anerkennung wird politische Praxis.",
+    "focus": [
+      "Autorität",
+      "Karriere",
+      "Erinnerung als Spiegel"
+    ],
+    "evidence": "Nora umwindet Platz mit Jasmin, schenkt Kaffee; später Leiterin der NS-Frauenschaft. (vgl. S. 17)"
+  },
+  {
+    "id": "r_fraeulein_mees_kontrolle_schutz",
+    "type": "Aufsicht/Schutz",
+    "figures": [
+      "fraeulein_mees"
+    ],
+    "phase": "Schule",
+    "prompt": "Mees kontrolliert und schützt zugleich: Moralischer Rahmen, körperliche Präsenz (Kreuz) – später Standhaftigkeit gegen NS-Drohung.",
+    "focus": [
+      "Religion",
+      "Autorität",
+      "Standhaftigkeit"
+    ],
+    "evidence": "„unzerstörbares Kreuz“; bewacht Mädchen; Vorladung Volksgericht bleibt ohne Wirkung. (vgl. S. 30–31)"
+  },
+  {
+    "id": "r_fraeulein_sichel_sophie_meier_schutz_im_deportationszug",
+    "type": "Schutz/Schicksalsgemeinschaft",
+    "figures": [
+      "fraeulein_sichel"
+    ],
+    "phase": "Schule → Deportation",
+    "prompt": "Sichel als Lehrerin, später als Schutzfigur: Im Deportationszug werden Lehrerin und Schülerin zu „Schwestern“ – Solidarität unter Vernichtung.",
+    "focus": [
+      "Solidarität",
+      "Verfolgung",
+      "Entwürdigung"
+    ],
+    "evidence": "Sophie wird ausgescholten; später gemeinsam deportiert; Sophie stirbt in Sichels Armen. (vgl. S. 30–31)"
+  },
+  {
+    "id": "r_herr_neeb_gerda_reform_und_verrat",
+    "type": "Ehe/Politische Entwicklung",
+    "figures": [
+      "herr_neeb",
+      "gerda"
+    ],
+    "phase": "1918 → NS-Zeit",
+    "prompt": "Neeb sucht Gerda; beide treffen sich als Reformkräfte. Später hängt er die Hakenkreuzfahne aus Angst um Stelle – und trägt Mitschuld an Gerdas Tod.",
+    "focus": [
+      "Ideale",
+      "Brot/Existenz",
+      "Mitschuld"
+    ],
+    "evidence": "„Bund entschiedener Schulreformer“; Hakenkreuzfahne wegen Gesetz/Stelle; Mitschuld. (vgl. S. 26)"
+  },
+  {
+    "id": "r_lore_ida_freundschaft_und_feme",
+    "type": "Freundschaft/Ansehen",
+    "figures": [
+      "lore",
+      "ida"
+    ],
+    "phase": "Schule → später",
+    "prompt": "Ida ist Lores einzige Freundin; Gerede, Schwimmanstalten. Ida steigt aus, Lore endet durch Nazi-Eifersucht bedroht im Suizid.",
+    "focus": [
+      "Klassenmoral",
+      "Sexualität",
+      "Kontrolle"
+    ],
+    "evidence": "Zimtsternchen, einzige Freundin; Ida wird Diakonissin; Lore bedroht wegen „Rassenschande“, Schlafpulver. (vgl. S. 19)"
+  },
+  {
+    "id": "r_liese_moebius_stille_fromme_resilienz",
+    "type": "Randfigur/Moralischer Kontrast",
+    "figures": [
+      "liese_moebius"
+    ],
+    "phase": "NS-Zeit/Bombardement",
+    "prompt": "Liese, von Nazis gering geschätzt, wird im Luftschutzkeller zur stillen Mitte: Die Spötter rücken zu ihr, als ob ihr Glaube Tod „beschwichtigt“.",
+    "focus": [
+      "Glaube",
+      "Angst",
+      "Gemeinschaft unter Druck"
+    ],
+    "evidence": "Versetzung, Verachtung; im Keller werden Nachbarn sanft; Bombenangriff. (vgl. S. 37)"
+  }
+]

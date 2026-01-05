@@ -1,0 +1,34 @@
+[
+  {
+    "id": "t1",
+    "label": "Schule/Ausflug (ca. 1912)",
+    "questions": [
+      "Wer steht wem nahe? Wer wird schon hier ausgegrenzt?",
+      "Welche Gesten (Arm, Blick, Geschenk) tragen Zukunft in sich?"
+    ]
+  },
+  {
+    "id": "t2",
+    "label": "Krieg & Umbruch (1914–1918)",
+    "questions": [
+      "Welche Lebenspläne werden durch Krieg zerschnitten?",
+      "Wie verschiebt sich ‚Treue‘ unter Verlust?"
+    ]
+  },
+  {
+    "id": "t3",
+    "label": "Weimar & Entscheidungen (1919–1932)",
+    "questions": [
+      "Wo wird aus Überzeugung Reform – und wo wird es bequem?",
+      "Welche Berufe/Wege versprechen Sicherheit?"
+    ]
+  },
+  {
+    "id": "t4",
+    "label": "NS-Zeit (1933–1945)",
+    "questions": [
+      "Welche Beziehungen kippen in Denunziation, Funktion, Angst?",
+      "Wer schützt – wer nutzt Macht?"
+    ]
+  }
+]

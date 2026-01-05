@@ -1,0 +1,30 @@
+[
+  {
+    "id": "i_schuld_ohne_boese",
+    "level": "matura",
+    "title": "Nicht böse – aber schuldig",
+    "prompt": "Zeige an einer Figur, wie Seghers Schuld ohne Sadismus beschreibt: Welche kleine Entscheidung (Bequemlichkeit, Rang, Angst) wird politisch tödlich?",
+    "help": "Achte auf Übergänge: private Loyalität → öffentliche Haltung; ‚Brot für die Familie‘ → Symbolhandlung (Fahne)."
+  },
+  {
+    "id": "i_erinnerung_als_anklage",
+    "level": "matura",
+    "title": "Erinnerung ist keine Nostalgie",
+    "prompt": "Begründe, warum die Erinnerung an den Ausflug als Anklage funktioniert. Was macht die Erzählerin sichtbar, indem sie Zukunftswissen in Kinderszenen schiebt?",
+    "help": "Arbeite mit: Zeitmontage, Vorwegnahme, Kontrast (Idylle vs. Deportation/Denunziation)."
+  },
+  {
+    "id": "i_nahe_zerbricht_an_ideologie",
+    "level": "matura",
+    "title": "Nähe zerbricht an Ideologie",
+    "prompt": "Nimm eine Beziehung, die als ‚natürlich‘ erscheint (Freundschaft/Liebe). Zeige, wie Ideologie sie nicht nur zerstört, sondern umcodiert (Treue → Verrat).",
+    "help": "Unterscheide: Emotion (Körper, Arm um Hals) vs. Deutung (Volksgenossin, Rang, ‚Ehre‘)."
+  },
+  {
+    "id": "i_ueberleben_um_jeden_preis",
+    "level": "matura",
+    "title": "Überleben um welchen Preis?",
+    "prompt": "Vergleiche zwei Figuren: Wer überlebt, wer stirbt – und was sagt Seghers über ‚Preis‘, ‚Würde‘ und ‚Mitmachen‘?",
+    "help": "Nicht moralinsauer: argumentiere textnah mit Konsequenzen und Blick der Erzählerin."
+  }
+]

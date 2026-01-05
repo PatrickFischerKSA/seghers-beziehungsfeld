@@ -1,0 +1,100 @@
+[
+  {
+    "id": "leni",
+    "name": "Leni",
+    "role": "Schülerin",
+    "image": "assets/images/figures/leni.jpg",
+    "text": "texts/figures/leni.md"
+  },
+  {
+    "id": "marianne",
+    "name": "Marianne",
+    "role": "Schülerin",
+    "image": "assets/images/figures/marianne.jpg",
+    "text": "texts/figures/marianne.md"
+  },
+  {
+    "id": "nora",
+    "name": "Nora",
+    "role": "Schülerin",
+    "image": "assets/images/figures/nora.jpg",
+    "text": "texts/figures/nora.md"
+  },
+  {
+    "id": "lore",
+    "name": "Lore",
+    "role": "Schülerin",
+    "image": "assets/images/figures/lore.jpg",
+    "text": "texts/figures/lore.md"
+  },
+  {
+    "id": "ida",
+    "name": "Ida",
+    "role": "Schülerin",
+    "image": "assets/images/figures/ida.jpg",
+    "text": "texts/figures/ida.md"
+  },
+  {
+    "id": "gerda",
+    "name": "Gerda",
+    "role": "Schülerin",
+    "image": "assets/images/figures/gerda.jpg",
+    "text": "texts/figures/gerda.md"
+  },
+  {
+    "id": "else",
+    "name": "Else",
+    "role": "Schülerin",
+    "image": "assets/images/figures/else.jpg",
+    "text": "texts/figures/else.md"
+  },
+  {
+    "id": "liese_moebius",
+    "name": "Liese Möbius",
+    "role": "Schülerin",
+    "image": "assets/images/figures/liese_moebius.jpeg",
+    "text": "texts/figures/liese_moebius.md"
+  },
+  {
+    "id": "katharina",
+    "name": "Katharina",
+    "role": "Schülerin",
+    "image": "assets/images/figures/katharina.jpg",
+    "text": "texts/figures/katharina.md"
+  },
+  {
+    "id": "fraeulein_mees",
+    "name": "Fräulein Mees",
+    "role": "Lehrerin",
+    "image": "assets/images/figures/fraeulein_mees.jpeg",
+    "text": "texts/figures/fraeulein_mees.md"
+  },
+  {
+    "id": "fraeulein_sichel",
+    "name": "Fräulein Sichel",
+    "role": "Lehrerin",
+    "image": "assets/images/figures/fraeulein_sichel.jpg",
+    "text": "texts/figures/fraeulein_sichel.md"
+  },
+  {
+    "id": "otto_fresenius",
+    "name": "Otto Fresenius",
+    "role": "Schüler (Realgymnasium)",
+    "image": "assets/images/figures/otto_fresenius.jpeg",
+    "text": "texts/figures/otto_fresenius.md"
+  },
+  {
+    "id": "gustav_liebig",
+    "name": "Gustav Liebig",
+    "role": "später SS-Sturmbannführer",
+    "image": "assets/images/figures/gustav_liebig.jpg",
+    "text": "texts/figures/gustav_liebig.md"
+  },
+  {
+    "id": "herr_neeb",
+    "name": "Herr Neeb",
+    "role": "junger Lehrer",
+    "image": "assets/images/figures/herr_neeb.jpg",
+    "text": "texts/figures/herr_neeb.md"
+  }
+]
