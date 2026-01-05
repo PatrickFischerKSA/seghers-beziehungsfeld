@@ -1,0 +1,148 @@
+<!doctype html>
+<!-- index.html - CHANGES v1: initial full playable version -->
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Beziehungsfeld – Seghers: Der Ausflug der toten Mädchen</title>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/cards.css"/>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">
+        <h1>Beziehungsfeld: <span style="color:var(--accent)">Der Ausflug der toten Mädchen</span></h1>
+        <p>Matura-Niveau: Figurenwissen entsteht über Beziehungen, Zeitbruch und moralische Konflikte. <b>Doppelklick</b> auf eine Figur öffnet Profil + Beziehungskarten + Interpretationsimpulse.</p>
+        <div id="status" style="margin-top:10px;"></div>
+      </div>
+      <div class="controls">
+        <button id="btnHow" class="btn">Spielmodus (kurz)</button>
+        <button id="btnReset" class="btn">Reset Board</button>
+        <button id="btnExport" class="btn btn-primary">Export</button>
+        <button id="btnImport" class="btn">Import</button>
+        <input id="fileImport" type="file" accept="application/json" style="display:none"/>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- LEFT: Figuren + Hilfen -->
+    <section class="panel">
+      <div class="hd">
+        <h2>Figuren</h2>
+        <span class="pill" id="progressText">0/0 Figuren platziert</span>
+      </div>
+      <div class="bd">
+        <div class="notice" id="how" style="display:none">
+          <b>Spielidee in 90 Sekunden</b><br><br>
+          1) Platziere Figuren in drei Zonen: <b>Nähe</b>, <b>Distanz</b>, <b>Konflikt</b>.<br>
+          2) Öffne Profile (Doppelklick oder Auswahl) und lies: <b>Beziehungskarten</b> + <b>Interpretationskarten</b>.<br>
+          3) Diskutiere mit Zeitbruch: Was kippt wann – und warum?<br><br>
+          <span class="small">Tipp: Die Zonen sind Deutungshilfen, keine „richtige“ Lösung. Entscheidend ist die Begründung.</span>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center; margin-bottom:12px; flex-wrap:wrap;">
+          <select id="selectFigure" style="flex:1; min-width:220px; padding:10px 12px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text);"></select>
+          <button id="btnOpenSelected" class="btn">Profil öffnen</button>
+        </div>
+
+        <div id="figureGrid" class="grid"></div>
+
+        <div class="hr"></div>
+        <div class="notice">
+          <b>Matura-Impulse</b><br>
+          – Suche nicht „Wer ist gut/böse?“, sondern: <b>Welche Entscheidung</b> kippt eine Beziehung?<br>
+          – Unterscheide: <b>Treue als Form</b> (Gelöbnis, Gestus) vs. <b>Treue als Ethik</b> (Handeln im Risiko).<br>
+          – Nenne immer: <b>Konsequenz</b> (für wen? wodurch?).
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Board -->
+    <section class="panel">
+      <div class="hd">
+        <h2>Board</h2>
+        <span class="pill"><img src="assets/images/ui/icons/relationship.svg" alt="" style="width:14px;height:14px;opacity:.9">Drag & Drop</span>
+      </div>
+      <div class="bd">
+        <div class="board">
+          <div class="dropzones">
+            <div id="zone_nahe" class="zone">
+              <h3><img src="assets/images/ui/icons/relationship.svg" alt=""> Nähe / Bindung</h3>
+              <div class="hint" id="zone_nahe_hint"></div>
+              <div class="placed" id="zone_nahe_placed"></div>
+            </div>
+
+            <div id="zone_distanz" class="zone">
+              <h3><img src="assets/images/ui/icons/time.svg" alt=""> Distanz / Ausblendung</h3>
+              <div class="hint" id="zone_distanz_hint"></div>
+              <div class="placed" id="zone_distanz_placed"></div>
+            </div>
+
+            <div id="zone_konflikt" class="zone">
+              <h3><img src="assets/images/ui/icons/interpretation.svg" alt=""> Konflikt / Bruch</h3>
+              <div class="hint" id="zone_konflikt_hint"></div>
+              <div class="placed" id="zone_konflikt_placed"></div>
+            </div>
+          </div>
+
+          <div style="padding:12px;">
+            <div class="notice">
+              <b>Zeitbruch (Diskussionsmotor)</b><br>
+              Übertrage deine Anordnung in vier Zeitfenster. Frage jeweils: Was bleibt? Was kippt? Wer wird Täter:in, Mitläufer:in, Opfer – und wodurch?
+            </div>
+            <div id="timeline" style="margin-top:10px; display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:10px;"></div>
+          </div>
+        </div>
+
+        <div class="hr"></div>
+        <div class="notice">
+          <b>Bedienung</b><br>
+          – Figurkarte: <b>ziehen</b> ins Board<br>
+          – Profil: <b>Doppelklick</b> auf Figurkarte<br>
+          – Export/Import: Speichere ein Diskussions-Setup (z.B. Gruppe A vs. B).
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="dialog" role="dialog" aria-modal="true">
+      <div class="dhd">
+        <h3 id="modalTitle">Figur</h3>
+        <button id="modalClose" class="btn">Schließen</button>
+      </div>
+      <div class="dbd">
+        <div class="profile">
+          <div class="ph"><img id="modalImg" alt=""></div>
+          <div class="pb">
+            <p class="nm" id="modalName"></p>
+            <p class="rl" id="modalRole"></p>
+            <div class="hr"></div>
+            <div class="small">Hinweis: Beziehungskarten sind <b>diskutierbar</b>. Du kannst widersprechen – aber musst begründen.</div>
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div class="markdown" id="mdBox">Lade Figurentext…</div>
+
+          <div class="panel" style="box-shadow:none;">
+            <div class="hd"><h2>Beziehungskarten (zu dieser Figur)</h2></div>
+            <div class="bd" id="relList" style="display:flex; flex-direction:column; gap:10px;"></div>
+          </div>
+
+          <div class="panel" style="box-shadow:none;">
+            <div class="hd"><h2>Interpretationskarten (zufällig)</h2></div>
+            <div class="bd" id="interpList" style="display:flex; flex-direction:column; gap:10px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
